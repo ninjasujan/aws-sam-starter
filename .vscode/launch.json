@@ -1,0 +1,21 @@
+{
+	"configurations": [
+		{
+			"type": "aws-sam",
+			"request": "direct-invoke",
+			"name": "API lambda-sam-1:testFunction",
+			"invokeTarget": {
+				"target": "api",
+				"templatePath": "${workspaceFolder}/lambda-sam-1/template.yaml",
+				"logicalId": "testFunction"
+			},
+			"api": {
+				"path": "/",
+				"httpMethod": "get",
+				"payload": {
+					"json": {}
+				}
+			}
+		}
+	]
+}

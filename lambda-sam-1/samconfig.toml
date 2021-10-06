@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "Lambda-SAM-1"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-q5j2wr1pl240"
+s3_prefix = "Lambda-SAM-1"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
