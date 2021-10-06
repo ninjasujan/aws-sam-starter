@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "StackTest"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-tk24txfut3jw"
+s3_prefix = "StackTest"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
