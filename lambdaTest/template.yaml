@@ -28,8 +28,10 @@ Resources:
       CodeUri: src/
       Handler: app.lambdaHandler
       Runtime: nodejs14.x
+      Layers:
+        - arn:aws:lambda:us-east-1:750989312652:layer:LambdaTestDependencies:1
       Events:
-        HelloWorld:
+        ApiEvent:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
             Path: /health

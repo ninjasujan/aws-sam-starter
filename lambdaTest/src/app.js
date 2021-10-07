@@ -1,9 +1,13 @@
+const uuid = require("/opt/nodejs/app.js");
+
 exports.lambdaHandler = async (event, context) => {
 	try {
-		const _id = event.requestContext.authorizer.principalId;
 		return {
 			statusCode: 200,
-			body: JSON.stringify({ message: "API Authorized", _id: _id }),
+			body: JSON.stringify({
+				message: "API Authorized for Lambda",
+				uuid: uuid(),
+			}),
 		};
 	} catch (err) {
 		return {
